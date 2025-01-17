@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+    <link rel="stylesheet" href="style.css">
+    
+<script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+<script>
+    function cargado(){
+      $(".flecha").click(function(){
+        var flecha = $(this).attr("src");
+        if (flecha == "left.png"){
+            $(this).attr("src","more.png");
+            //$(".texto").addClass("oculto");
+            //$(".texto").removeClass("texto");
+            $(this).parent().next().removeClass("oculto");
+            $(this).parent().next().addClass("texto");                       
+        }else{
+            $(this).attr("src","left.png");
+            //$(".oculto").addClass("texto");
+            //$(".oculto").removeClass("oculto");
+            $(this).parent().next().removeClass("texto");
+            $(this).parent().next().addClass("oculto");
+        }
+      });
+    }
+    $(document).ready(cargado);
+</script>
+</head>
+<body>
+    <header>
+        <div><h1>PRACTICA USABILIDAD</h1></div>
+    </header>
+    <div class="cabcont"><h2>Apartado 1</h2>
+    <img class="flecha" src="left.png" alt="expandir"></div>
+    <div class="oculto">
+        Sube a un hosting gratuito una de las practicas de la Unidad de Trabajo anterior</br>
+        Cuando la tengas subida, mediante <a href="https://chatgpt.com/">una inteligencia artifical (ChatGPT)</a> testea tu pagina,(Con un PROMPT como el siguiente "Que podría mejorar en mi página WEB, para mejorar la usabilidad y visiblidad de mi página") y realiza una captura de la respuesta con las mejoras propuestas
+    </div>
+    <div class="cabcont"><h2>Apartado 2</h2>
+        <img class="flecha" src="left.png" alt="expandir"></div>
+        <div class="oculto">
+        Intenta corregir las mejoras que te proponga la IA, por lo menos 4 , y siempre haz primero, las mas aconsejadas por la IA  
+    </div>
+    <div class="cabcont"><h2>Apartado 3</h2>
+        <img class="flecha" src="left.png" alt="expandir"></div>
+        <div class="oculto">
+        Una vez realizadas la mejoras, vuelve a testearla mediante <a href="https://chatgpt.com/">una inteligencia artifical (ChatGPT)</a>, vuelve a realizar capturas.
+    </div>
+    <div class="cabcont"><h2>Entrega</h2>
+        <img class="flecha" src="left.png" alt="expandir"></div>
+        <div class="oculto">
+        Entrega en un archivo comprimido, que contengan 3 directorios (uno por apartado) con las capturas y codigo tanto html como css.
+    </div>
+    <div class="cabcont"><h2>Evaluación</h2>
+        <img class="flecha" src="left.png" alt="expandir"></div>
+        <div class="oculto">
+        <table>
+            <tr>
+                <th>R.A.6</th>
+                <th>c.e a)</th>
+                <th>c.e b)</th>
+                <th>c.e c)</th>
+                <th>c.e d)</th>
+                <th>c.e e)</th>
+                <th>c.e f)</th>
+            </tr>
+            <tr>
+                <th>APT 1</th>
+                <td>40%</td>
+                <td></td>
+                <td></td>
+                <td>80%</td>
+                <td>40%</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <th>APT 2</th>
+                <td></td>
+                <td>80%</td>
+                <td>80%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>APT 3</th>
+                <td>40%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>40%</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
